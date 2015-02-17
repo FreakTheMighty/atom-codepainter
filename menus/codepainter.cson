@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle codepainter'
+      'command': 'codepainter:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'codepainter'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'codepainter:toggle'
+        }
+      ]
+    ]
+  }
+]
